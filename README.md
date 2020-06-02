@@ -10,7 +10,7 @@ Este reposítório reune um conjunto de scripts, notebooks, etc. que constituem 
 ## Requisitos
 
 
-* [Anaconda]([ww](https://www.anaconda.com/)) - distribuição python para ciência de dados.
+* [Anaconda](https://www.anaconda.com/) - distribuição python para ciência de dados.
 * [Docker](www.docker.com) - IaaC (Infrastructure as a Code).
 
 ## Conda env
