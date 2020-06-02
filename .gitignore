@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # dados
-input_data
+input_data/**
+!input_data/GCF_000746645.1_ASM74664v1_protein.fa
 output
