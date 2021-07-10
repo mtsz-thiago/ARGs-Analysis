@@ -1,0 +1,4 @@
+[core]
+    remote = args-storage
+['remote "args-storage"']
+    url = s3://args-storage
