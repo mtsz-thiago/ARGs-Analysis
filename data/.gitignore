@@ -1,1 +1,9 @@
-/GCF_000746645.1_ASM74664v1_protein.fa
+/card-data.tar.bz2
+*.fasta
+*card.json
+aro_categories_index.tsv
+aro_index.tsv
+aro_categories.tsv
+CARD-Download-README.txt
+snps.txt
+
