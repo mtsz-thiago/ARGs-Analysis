@@ -13,7 +13,8 @@ Este reposítório reune um conjunto de scripts, notebooks, etc. que constituem 
 
 Este repositório usa recursos da AWS para storage e processamento
 
-- [AWS Account](https://aws.amazon.com/pt/)
+- [docker](https://www.docker.com/): para conteinerizar o ambiente de desenvolvimento.
+- [AWS Account](https://aws.amazon.com/pt/): para acesso a serviços e recursos em nuvem.
 
 > O uso de recursos em nuvem implica em cobraça. 
 
