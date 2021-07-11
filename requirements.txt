@@ -3,3 +3,4 @@ dvc[s3]
 boto3
 biopython
 ipykernel
+pandas
