@@ -1,11 +1,11 @@
-Deep ARG
+AnGRA
 ===
 
-Experimentações e estudos de workflows e métodos para a identificação de ARGs (genes de resistência a antibióticos)
+Biblioteca para análise de genômica de resistência a antibióiticos. 
 
 ## Sobre
 
-Este reposítório reune um conjunto de scripts, notebooks, etc. que constituem experimentações e estudos a cerca de maneiras de fazer a identificação de ARGs.
+Este projeto deve gerar uma artigo científico e posteriormente gerar uma biblioteca python que facilite a análise da genômica de organismos resitentes a antibióticos.
 
 ## Desenvolvimento
 
@@ -20,7 +20,7 @@ Este repositório usa recursos da AWS para storage e processamento
 
 ### Dev Container
 
-O [Dockerfile](./Dockerfile) na raiz deste repositório define uma imagem para o ambiente de desenvolvimento do projeto. Se você for uma pessoa do [VSCode](https://code.visualstudio.com/) o [./devcontainer] facilitará sua vida. Siga o [tutorial](https://code.visualstudio.com/docs/remote/containers) para habilitar o uso.
+O [Dockerfile](./Dockerfile) na raiz deste repositório define uma imagem para o ambiente de desenvolvimento do projeto. Se você for uma pessoa do [VSCode](https://code.visualstudio.com/) o [devcontainer](./devcontainer) facilitará sua vida. Siga o [tutorial](https://code.visualstudio.com/docs/remote/containers) para habilitar o uso.
 
 > Por conveniência as configurações `aws` serão montadas no container de desenvolvimento, portanto configura seu cli para sua conta de dev e o resto está feito
 
