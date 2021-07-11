@@ -37,7 +37,8 @@
 		"ms-python.vscode-pylance",
 		"ho-wan.vscode-trello-viewer",
 		"mhutchie.git-graph",
-		"ms-vsliveshare.vsliveshare"
+		"ms-vsliveshare.vsliveshare",
+		"ctenbrinke.vscode-tsv"
 	],
 
 	"mounts": [
