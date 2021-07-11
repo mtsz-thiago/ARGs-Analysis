@@ -38,7 +38,8 @@
 		"ho-wan.vscode-trello-viewer",
 		"mhutchie.git-graph",
 		"ms-vsliveshare.vsliveshare",
-		"ctenbrinke.vscode-tsv"
+		"ctenbrinke.vscode-tsv",
+		"ms-ceintl.vscode-language-pack-pt-br"
 	],
 
 	"mounts": [
