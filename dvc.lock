@@ -2,7 +2,11 @@ schema: '2.0'
 stages:
   train_flow:
     cmd: python3 train_flow.py
+    params:
+      params.yaml:
+        train.fasta_input_path: ./data/nucleotide_fasta_protein_homolog_model.fasta
+        train.kmer_sz: 6
     outs:
     - path: data/train.tsv
-      md5: 63bf28da00404605dac52f0056d589ee
+      md5: 52d63decaf557a1c19b405214b807560
       size: 19679984

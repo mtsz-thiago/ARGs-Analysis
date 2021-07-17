@@ -3,6 +3,39 @@ stages:
     cmd: python3 train_flow.py
     params:
     - train.kmer_sz
-    - train.fasta_input_paths
+    - train.fasta_input_path
     outs:
     - data/train.tsv
+
+  finetune_dnabert: 
+    cmd: >-
+      docker run --rm --gpus all
+      -v $PWD/artifacts:/app/artifacts 
+      -v $PWD/dnabert:/app/base 
+      -v $PWD/data:/app/data
+      thiagomtsz/dnabert:latest run_finetune.py
+      --model_type dna
+      --tokenizer_name=dna6
+      --model_name_or_path ./base/6-new-12w-0
+      --task_name dnaprom
+      --do_train
+      --do_eval
+      --data_dir ./data/
+      --max_seq_length 75
+      --per_gpu_eval_batch_size=16
+      --per_gpu_train_batch_size=16
+      --learning_rate 2e-4
+      --num_train_epochs 3.0
+      --output_dir ./artifacts
+      --evaluate_during_training
+      --logging_steps 100
+      --save_steps 4000
+      --warmup_percent 0.1
+      --hidden_dropout_prob 0.1
+      --overwrite_output
+      --weight_decay 0.01
+      --n_process 4
+    deps:
+    - data/train.tsv
+    outs:
+    - artifacts/finetuned_model

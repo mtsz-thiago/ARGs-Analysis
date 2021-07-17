@@ -35,5 +35,5 @@ def main(kmer_sz: int, fasta_input_path: str):
     train_df.to_csv("data/train.tsv", sep='\t',index=False)
 
 if __name__ == "__main__":
-    params = yaml.safe_load(open("params.yml"))["train"]
+    params = yaml.safe_load(open("params.yaml"))["train"]
     main(**params)
