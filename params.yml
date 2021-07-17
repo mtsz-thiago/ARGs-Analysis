@@ -1,0 +1,3 @@
+train:
+  kmer_sz: 6
+  fasta_input_path: "./data/nucleotide_fasta_protein_homolog_model.fasta"
