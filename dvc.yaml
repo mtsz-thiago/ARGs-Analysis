@@ -1,0 +1,8 @@
+stages:
+  train_flow:
+    cmd: python3 train_flow.py
+    params:
+    - train.kmer_sz
+    - train.fasta_input_paths
+    outs:
+    - data/train.tsv

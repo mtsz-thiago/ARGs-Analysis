@@ -1,0 +1,8 @@
+schema: '2.0'
+stages:
+  train_flow:
+    cmd: python3 train_flow.py
+    outs:
+    - path: data/train.tsv
+      md5: 63bf28da00404605dac52f0056d589ee
+      size: 19679984
